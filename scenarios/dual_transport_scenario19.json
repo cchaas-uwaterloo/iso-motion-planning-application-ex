@@ -1,0 +1,284 @@
+{
+    "carrier0": {
+        "initial_head_1_pose": [
+            1045,
+            4000,
+            180  
+        ],
+        "initial_head_2_pose": [
+            1390,
+            800,
+            -10
+        ],
+        "final_head_1_pose": [
+            1000,
+            2000,
+            180
+        ],
+        "final_head_2_pose": [
+            1690,
+            5300,
+            90
+        ],
+        "primary_controlled_head": 1,
+        "primary_nominal_trajectory": "JointLine",
+        "part_type": "rectangular_part_0",
+        "head_part_center_offset": [
+            300,
+            0,
+            0
+        ],
+        "q_min": [
+            [
+                -10000,
+                -1850,
+                -2000,
+                -10000
+            ],
+            [
+                -10000,
+                -1850,
+                -2000,
+                -10000
+            ],
+            [
+                0,
+                -3400,
+                -5000,
+                -20000
+            ],
+            [
+                0,
+                -3400,
+                -5000,
+                -20000
+            ],
+            [
+                -3.14159,
+                -1.6,
+                -3.14,
+                -70
+            ],
+            [
+                -3.14159,
+                -1.6,
+                -3.14,
+                -70
+            ]
+        ],
+        "q_max": [
+            [
+                10000,
+                1850,
+                2000,
+                10000
+            ],
+            [
+                10000,
+                1850,
+                2000,
+                10000
+            ],
+            [
+                6500,
+                3400,
+                5000,
+                20000
+            ],
+            [
+                6500,
+                3400,
+                5000,
+                20000
+            ],
+            [
+                3.14159,
+                1.6,
+                3.14,
+                70
+            ],
+            [
+                3.14159,
+                1.6,
+                3.14,
+                70
+            ]
+        ],
+        "task_trajectory_motion_limits_xy": [
+            800,
+            1500,
+            5000
+        ],
+        "task_trajectory_motion_limits_theta": [
+            20,
+            40,
+            40
+        ]
+    },
+    "carrier1": {
+        "initial_head_1_pose": [
+            3655,
+            1200,
+            180
+        ],
+        "initial_head_2_pose": [
+            4345,
+            4000,
+            0
+        ],
+        "final_head_1_pose": [
+            2955,
+            5200,
+            180
+        ],
+        "final_head_2_pose": [
+            3445,
+            2000,
+            0
+        ],
+        "primary_controlled_head": 0,
+        "primary_nominal_trajectory": "JointLine",
+        "part_type": "rectangular_part_1",
+        "head_part_center_offset": [
+            0,
+            0,
+            0
+        ],
+                "q_min": [
+            [
+                -10000,
+                -1850,
+                -2000,
+                -10000
+            ],
+            [
+                -10000,
+                -1850,
+                -2000,
+                -10000
+            ],
+            [
+                0,
+                -3400,
+                -5000,
+                -20000
+            ],
+            [
+                0,
+                -3400,
+                -5000,
+                -20000
+            ],
+            [
+                -3.14159,
+                -1.6,
+                -3.14,
+                -70
+            ],
+            [
+                -3.14159,
+                -1.6,
+                -3.14,
+                -70
+            ]
+        ],
+        "q_max": [
+            [
+                10000,
+                1850,
+                2000,
+                10000
+            ],
+            [
+                10000,
+                1850,
+                2000,
+                10000
+            ],
+            [
+                6500,
+                3400,
+                5000,
+                20000
+            ],
+            [
+                6500,
+                3400,
+                5000,
+                20000
+            ],
+            [
+                3.14159,
+                1.6,
+                3.14,
+                70
+            ],
+            [
+                3.14159,
+                1.6,
+                3.14,
+                70
+            ]
+        ],
+        "task_trajectory_motion_limits_xy": [
+            800,
+            1500,
+            5000
+        ],
+        "task_trajectory_motion_limits_theta": [
+            20,
+            40,
+            40
+        ]
+    },
+    "obstacles": [
+        {
+            "part_type": "obstacle_part_0",
+            "pose": [
+                600,
+                3000,
+                0
+            ],
+            "interaction_bias_vector_min": [
+                0,
+                0,
+                0
+            ],
+            "interaction_bias_vector_max": [
+                0,
+                0,
+                0
+            ],
+            "interaction_bias_transition_time_s": 1,
+            "edge_convex_offset": 30, 
+            "exponential_repulsive_gain": 10000000, 
+            "exponential_cutoff_distance_min": 50,
+            "exponential_cutoff_distance_max": 1200,
+            "exponential_cutoff_distance_transition_time_s": 0.5
+        },
+        {
+            "part_type": "obstacle_part_1",
+            "pose": [
+                4700,
+                4500,
+                0
+            ],
+            "interaction_bias_vector_min": [
+                0,
+                0,
+                0
+            ],
+            "interaction_bias_vector_max": [
+                0,
+                0,
+                0
+            ],
+            "interaction_bias_transition_time_s": 1,
+            "edge_convex_offset": 30, 
+            "exponential_repulsive_gain": 100000000, 
+            "exponential_cutoff_distance_min": 50,
+            "exponential_cutoff_distance_max": 500,
+            "exponential_cutoff_distance_transition_time_s": 0.5
+        }
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "debug_config": {
+        "debug_mode": true, 
+        "log_run_name": "test",
+        "log_output_folder": "C:/Users/Cameron Haas/Isochronic/CAMP_test_workspace/images/",
+        "video_output_folder": "C:/Users/Cameron Haas/Isochronic/CAMP_test_workspace/videos/",
+        "video_dpi": 300,
+        "display_plots": false,
+        "display_video": false
+    },
+    "scene_config": {
+        "vis_scale": 1000
+    },
+    "idk_config": {
+        "vel_integral_order": 2, 
+        "jacobian_type": "numeric",
+        "objective": "constrained",
+        "null_objective": "joint_centering",
+        "null_objective_weight": 0.2, 
+        "pos_limit_weight": 10000,
+        "vel_limit_weight": 10000, 
+        "vel_damping_weight": 0,
+        "pos_slack_damping_weight": 0,
+        "vel_slack_damping_weight": 0,
+        "constrained_solver": "qpoases",
+        "limit_jerk": false,
+        "min_inter_base_distance": 750,
+        "max_carrier_angle_deg": 25,
+        "step_time": 0.005
+    },
+    "nominal_trajectory_config": {
+        "disable_nominal_traj_joint_jerk_limits": true
+    },
+    "part_interaction_config": {
+        "apply_avoidance": true, 
+        "enable_different_fly_heights": true,
+        "visualize_avoidance": true,
+        "collision_threshold_mm": 10,
+        "edge_convex_offset": 0, 
+        "exponential_repulsive_gain": 1000000, 
+        "exponential_cutoff_distance_min": 50,
+        "exponential_cutoff_distance_max": 400,
+        "exponential_cutoff_distance_transition_time_s": 0.5,
+        "part_c0_repulsion_gain_default": [
+            [
+                200, 
+                0,
+                0
+            ], 
+            [
+                0, 
+                200, 
+                0
+            ], 
+            [
+                0, 
+                0, 
+                0.001
+            ]
+        ],
+        "part_c1_repulsion_gain_default": [
+            [
+                1000, 
+                0, 
+                0
+            ],
+            [
+                0, 
+                1000,
+                0
+            ],
+            [
+                0, 
+                0,
+                0.01
+            ]
+        ],
+        "Q_LQR": [
+            [10000000, 0, 0, 0, 0, 0],
+            [0, 10000000, 0, 0, 0, 0],
+            [0, 0, 10000, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 1]
+        ],
+        "R_LQR": [
+            [100, 0, 0],
+            [0, 100, 0],
+            [0, 0, 100]
+        ],
+        "c0_regulator_saturation_limit": [
+            1500, 
+            1500, 
+            0.7
+        ],
+        "c1_regulator_saturation_limit": [
+            1500, 
+            1500, 
+            0.7
+        ],
+        "position_convergence_tolerance_mm": 1,
+        "angular_convergence_tolerance_deg": 1, 
+        "velocity_convergence_tolerance_mm_s": 0.1, 
+        "angular_velocity_convergence_tolerance_deg_s": 0.1,
+        "position_terminal_zone_mm": 500,
+        "angular_terminal_zone_deg": 10,
+        "velocity_terminal_zone_mm_s": 500,
+        "angular_velocity_terminal_zone_deg_s": 50,
+        "enable_open_loop_terminal_zone_traj": true,
+        "interaction_bias_vector_c0_min": [
+            -5, 
+            0, 
+            0
+        ],
+        "interaction_bias_vector_c1_min": [
+            5, 
+            0,
+            0
+        ],
+        "interaction_bias_vector_c0_max": [
+            -25, 
+            0, 
+            0
+        ],
+        "interaction_bias_vector_c1_max": [
+            25, 
+            0,
+            0
+        ],
+        "interaction_bias_transition_time_s": 1,
+        "interference_check_margin_mm": 100
+    }
+}

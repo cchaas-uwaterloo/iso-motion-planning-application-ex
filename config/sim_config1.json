@@ -1,0 +1,16 @@
+{
+    "sim_config": {
+        "log_run_name": "sim_test_proc",
+        "log_output_folder": "C:/Users/Cameron Haas/Isochronic/CAMP_test_workspace/images/",
+        "video_output_folder": "C:/Users/Cameron Haas/Isochronic/CAMP_test_workspace/videos/",
+        "video_dpi": 300,
+        "display_plots": false,
+        "display_video": false,
+        "velocity_integration_order": 2,
+        "dt": 0.005
+    },
+    "scene_config": {
+        "vis_scale": 1000,
+        "show_nominal_trajectory": false
+    }
+}
